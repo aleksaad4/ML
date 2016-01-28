@@ -1,6 +1,5 @@
 # coding=utf-8
 import pandas
-import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 
 from ad4.utils.utils import save_res
@@ -8,7 +7,7 @@ from ad4.utils.utils import save_res
 task_num = 2
 
 # Загрузите выборку из файла titanic.csv с помощью пакета Pandas.
-data = pandas.read_csv('../../../data/task1/titanic.csv', index_col='PassengerId')
+data = pandas.read_csv('../../../data/task2/titanic.csv', index_col='PassengerId')
 
 
 # Обратите внимание, что признак Sex имеет строковые значения.
