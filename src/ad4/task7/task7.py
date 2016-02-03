@@ -31,6 +31,6 @@ clf = GridSearchCV(clf_svc, tuned_parameters, cv=5)
 # Обучите SVM по всей выборке с лучшим параметром C, найденным на предыдущем шаге.
 best_c = 10# clf.best_params_['C']
 best_clf = SVC(kernel='linear', C=best_c, random_state=241)
-clf.fit(features, labels)
+best_clf.fit(features, labels)
 
 print best_clf.coef_
